@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="md:text-[1vw]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>National Gears | Precision Engineering & Custom Gears</title>
+    <meta name="description"
+        content="National Gears delivers high-performance custom gears and transmission solutions with sub-micron tolerances for global industrial leaders.">
+    <meta name="keywords"
+        content="National Gears, Precision Engineering, Custom Gears, Transmission Solutions, Industrial Gears, Gear Manufacturing">
+    <meta name="author" content="National Gears">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nationalgears.com/">
+    <meta property="og:title" content="National Gears | Precision Engineering & Custom Gears">
+    <meta property="og:description"
+        content="Delivering high-performance custom gears and transmission solutions with sub-micron tolerances for global industrial leaders.">
+    <meta property="og:image" content="https://www.nationalgears.com/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.nationalgears.com/">
+    <meta property="twitter:title" content="National Gears | Precision Engineering & Custom Gears">
+    <meta property="twitter:description"
+        content="Delivering high-performance custom gears and transmission solutions with sub-micron tolerances for global industrial leaders.">
+    <meta property="twitter:image" content="https://www.nationalgears.com/assets/og-image.jpg">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.nationalgears.com/">
+
+    <!-- Google Fonts: Google Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#002045',
+                        secondary: '#f59e0b',
+                        'secondary-container': '#fea619',
+                        'on-primary-container': '#86a0cd'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./public/css/style.css">
+    <style>
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes scan {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .technical-grid {
+            background-image: radial-gradient(circle at 1px 1px, rgba(0, 32, 69, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .glow-hover:hover {
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
+        }
+
+        .product-tab {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .product-tab.active {
+            color: white !important;
+        }
+
+        #tab-indicator {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            background: linear-gradient(135deg, #002045 0%, #1e40af 100%);
+        }
+
+        .product-panel {
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+
+<body class="font-['Google_Sans'] p-0 m-0 overflow-x-hidden">
+    <!-- Custom Cursor Elements -->
+    <div class="custom-cursor-dot hidden md:block"></div>
+    <div class="custom-cursor-outline hidden md:block"></div>
+
+    <div id="header-root"></div>
+
+    <main class="bg-white">
+        <!-- Hero: The Precision Entry -->
+        <section class="relative pt-60 pb-40 overflow-hidden bg-slate-950">
+            <!-- Cinematic Background Elements -->
+            <div
+                class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 blur-[180px] rounded-full -translate-y-1/2 translate-x-1/4 pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-amber-500/10 blur-[150px] rounded-full translate-y-1/4 -translate-x-1/4 pointer-events-none">
+            </div>
+            <div
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none">
+            </div>
+
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="inline-flex items-center gap-3 px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-amber-400 text-[11px] font-black uppercase tracking-[0.4em] mb-10 animate-float backdrop-blur-md">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shadow-[0_0_15px_rgba(245,158,11,1)]"></span>
+                        Engineering Portfolio 2024
+                    </div>
+                    <h1 class="text-7xl md:text-9xl font-black text-white mb-10 tracking-tighter leading-[0.85] uppercase">
+                        PRECISION <br />
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-slate-200 via-white to-slate-500 italic">REDEFINED.</span>
+                    </h1>
+                    <p class="text-slate-400 text-xl md:text-2xl font-light leading-relaxed max-w-4xl mb-16 mx-auto">
+                        Delivering sub-micron transmission solutions for global industrial leaders. Our gears are
+                        engineered for zero-failure performance in the world's most demanding environments.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center gap-8">
+                        <div
+                            class="group px-10 py-8 bg-white/5 border border-white/10 rounded-[2.5rem] hover:bg-white/10 transition-all duration-500 hover:border-amber-500/30">
+                            <div
+                                class="text-5xl font-black text-white mb-2 group-hover:text-amber-400 transition-colors tracking-tighter">
+                                DIN 3</div>
+                            <div class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em]">Quality Class
+                            </div>
+                        </div>
+                        <div
+                            class="group px-10 py-8 bg-white/5 border border-white/10 rounded-[2.5rem] hover:bg-white/10 transition-all duration-500 hover:border-blue-500/30">
+                            <div
+                                class="text-5xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors tracking-tighter">
+                                ±1μ</div>
+                            <div class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em]">Tolerances
+                            </div>
+                        </div>
+                        <div
+                            class="group px-10 py-8 bg-white/5 border border-white/10 rounded-[2.5rem] hover:bg-white/10 transition-all duration-500 hover:border-white/30">
+                            <div
+                                class="text-5xl font-black text-white mb-2 group-hover:text-white transition-colors tracking-tighter">
+                                0.2 Ra</div>
+                            <div class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em]">Surface Finish
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+                <span class="text-[10px] font-black text-white/30 uppercase tracking-[0.5em]">Explore Gear
+                    Catalog</span>
+                <div class="w-[1px] h-20 bg-gradient-to-b from-amber-500 to-transparent"></div>
+            </div>
+        </section>
+
+        <!-- Dynamic Category Explorer: Tabbed Interface -->
+        <section id="categories" class="py-16 bg-white relative">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Centered Gradient Tabs (Sticky) -->
+                <div class="sticky top-20 z-50 flex justify-center mb-24 py-4">
+                    <div
+                        class="inline-flex items-center p-2 bg-slate-900/90 backdrop-blur-xl rounded-[2.5rem] border border-white/10 shadow-2xl relative overflow-hidden">
+                        <!-- Active Tab Background (Dynamic Positioning) -->
+                        <div id="tab-indicator"
+                            class="absolute h-[calc(100%-1rem)] top-2 rounded-[2rem] bg-gradient-to-r from-amber-500 to-amber-600 shadow-xl transition-all duration-500 ease-in-out">
+                        </div>
+
+                        <button onclick="switchTab(0, this)"
+                            class="relative z-10 px-10 py-4 text-xs font-black uppercase tracking-widest text-white transition-colors duration-500 product-tab active"
+                            data-target="gear-types-section">
+                            Gear Types
+                        </button>
+                        <button onclick="switchTab(1, this)"
+                            class="relative z-10 px-10 py-4 text-xs font-black uppercase tracking-widest text-slate-400 transition-colors duration-500 product-tab"
+                            data-target="special-gears-section">
+                            Special Gears
+                        </button>
+                        <button onclick="switchTab(2, this)"
+                            class="relative z-10 px-10 py-4 text-xs font-black uppercase tracking-widest text-slate-400 transition-colors duration-500 product-tab"
+                            data-target="hydraulic-gears-section">
+                            Hydraulic
+                        </button>
+                        <button onclick="switchTab(3, this)"
+                            class="relative z-10 px-10 py-4 text-xs font-black uppercase tracking-widest text-slate-400 transition-colors duration-500 product-tab"
+                            data-target="components-section">
+                            Components
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab Panels -->
+                <div id="product-panels" class="relative">
+                    <!-- Panel 1: Gear Types -->
+                    <div id="gear-types-section" class="product-panel opacity-100 visible transition-all duration-700">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                            <div class="relative group">
+                                <div
+                                    class="absolute -inset-6 bg-primary/5 rounded-[4rem] group-hover:scale-105 transition-transform duration-1000">
+                                </div>
+                                <div
+                                    class="relative aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl border-[16px] border-white group-hover:border-slate-50 transition-colors">
+                                    <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a1930?auto=format&fit=crop&q=80&w=800"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                                    <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-amber-500 text-xs font-black uppercase tracking-[0.4em] mb-10 flex items-center gap-4">
+                                    <span class="w-12 h-[1px] bg-amber-500"></span> Technical Catalog
+                                </div>
+                                <h2 class="text-7xl font-black text-slate-900 mb-10 tracking-tighter leading-[0.85] uppercase">
+                                    GEAR <br /><span class="text-slate-300 italic">TYPES.</span>
+                                </h2>
+                                <p class="text-slate-500 text-xl font-light leading-relaxed mb-12 max-w-lg">
+                                    High-performance transmission solutions including Spur, Helical, and Bevel geometries, precisely machined for noise reduction and load longevity.
+                                </p>
+                                <div class="grid grid-cols-2 gap-10 mb-12">
+                                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 group/item hover:bg-white hover:shadow-xl transition-all">
+                                        <div class="text-3xl font-black text-slate-900 mb-1 tracking-tight">DIN 3</div>
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Precision Standard</div>
+                                    </div>
+                                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 group/item hover:bg-white hover:shadow-xl transition-all">
+                                        <div class="text-3xl font-black text-slate-900 mb-1 tracking-tight">0.5-12</div>
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Module Range</div>
+                                    </div>
+                                </div>
+                                <a href="gear-types.html"
+                                    class="inline-flex items-center gap-8 bg-primary text-white px-12 py-6 rounded-2xl font-black uppercase tracking-widest shadow-2xl shadow-primary/20 hover:bg-amber-500 transition-all hover:-translate-y-2 group">
+                                    Explore Range <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: Special Gears -->
+                    <div id="special-gears-section"
+                        class="product-panel opacity-0 invisible absolute inset-0 translate-y-10 transition-all duration-700">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                            <div class="order-2 lg:order-1">
+                                <div
+                                    class="text-amber-500 text-xs font-black uppercase tracking-[0.4em] mb-10 flex items-center gap-4">
+                                    <span class="w-12 h-[1px] bg-amber-500"></span> Custom Engineering
+                                </div>
+                                <h2 class="text-7xl font-black text-slate-900 mb-10 tracking-tighter leading-[0.85] uppercase">
+                                    SPECIAL <br /><span class="text-slate-300 italic">GEARS.</span></h2>
+                                <p class="text-slate-500 text-xl font-light leading-relaxed mb-12 max-w-lg">
+                                    Bespoke solutions including Worm Gears and Spline Shafts, engineered for extreme torque loads and complex mechanical integrations.
+                                </p>
+                                <div class="grid grid-cols-2 gap-10 mb-12">
+                                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 group/item hover:bg-white hover:shadow-xl transition-all">
+                                        <div class="text-3xl font-black text-slate-900 mb-1 tracking-tight">100%</div>
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Bespoke Design</div>
+                                    </div>
+                                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 group/item hover:bg-white hover:shadow-xl transition-all">
+                                        <div class="text-3xl font-black text-slate-900 mb-1 tracking-tight">Hardened</div>
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Surface Specs</div>
+                                    </div>
+                                </div>
+                                <a href="special-gears.html"
+                                    class="inline-flex items-center gap-8 bg-primary text-white px-12 py-6 rounded-2xl font-black uppercase tracking-widest shadow-2xl shadow-primary/20 hover:bg-amber-500 transition-all hover:-translate-y-2 group">
+                                    View Range <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                            <div class="relative group order-1 lg:order-2">
+                                <div
+                                    class="absolute -inset-6 bg-primary/5 rounded-[4rem] group-hover:scale-105 transition-transform duration-1000">
+                                </div>
+                                <div
+                                    class="relative aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl border-[16px] border-white group-hover:border-slate-50 transition-colors">
+                                    <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=800"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3: Hydraulic Gears -->
+                    <div id="hydraulic-gears-section"
+                        class="product-panel opacity-0 invisible absolute inset-0 translate-y-10 transition-all duration-700">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                            <div class="relative group">
+                                <div
+                                    class="absolute -inset-6 bg-primary/5 rounded-[4rem] group-hover:scale-105 transition-transform duration-1000">
+                                </div>
+                                <div
+                                    class="relative aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl border-[16px] border-white group-hover:border-slate-50 transition-colors">
+                                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                                </div>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-amber-500 text-xs font-black uppercase tracking-[0.4em] mb-10 flex items-center gap-4">
+                                    <span class="w-12 h-[1px] bg-amber-500"></span> Fluid Dynamics
+                                </div>
+                                <h2 class="text-7xl font-black text-slate-900 mb-10 tracking-tighter leading-[0.85] uppercase">
+                                    HYDRAULIC <br /><span class="text-slate-300 italic">GEARS.</span></h2>
+                                <p class="text-slate-500 text-xl font-light leading-relaxed mb-12 max-w-lg">
+                                    High-precision pump gears engineered for earthmoving equipment and industrial power packs, verified for zero-leak performance.
+                                </p>
+                                <div class="grid grid-cols-2 gap-10 mb-12">
+                                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 group/item hover:bg-white hover:shadow-xl transition-all">
+                                        <div class="text-3xl font-black text-slate-900 mb-1 tracking-tight">900+</div>
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active Designs</div>
+                                    </div>
+                                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 group/item hover:bg-white hover:shadow-xl transition-all">
+                                        <div class="text-3xl font-black text-slate-900 mb-1 tracking-tight">High PSI</div>
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Pressure Rated</div>
+                                    </div>
+                                </div>
+                                <a href="hydraulic-gears.html"
+                                    class="inline-flex items-center gap-8 bg-primary text-white px-12 py-6 rounded-2xl font-black uppercase tracking-widest shadow-2xl shadow-primary/20 hover:bg-amber-500 transition-all hover:-translate-y-2 group">
+                                    View Catalog <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 4: Components -->
+                    <div id="components-section"
+                        class="product-panel opacity-0 invisible absolute inset-0 translate-y-10 transition-all duration-700">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                            <div class="order-2 lg:order-1">
+                                <div
+                                    class="text-amber-500 text-xs font-black uppercase tracking-[0.4em] mb-10 flex items-center gap-4">
+                                    <span class="w-12 h-[1px] bg-amber-500"></span> Transmission Units
+                                </div>
+                                <h2 class="text-7xl font-black text-slate-900 mb-10 tracking-tighter leading-[0.85] uppercase">
+                                    GEAR <br /><span class="text-slate-300 italic">COMPONENTS.</span></h2>
+                                <p class="text-slate-500 text-xl font-light leading-relaxed mb-12 max-w-lg">
+                                    Precision shafts and housings engineered for seamless integration into high-performance transmission assemblies.
+                                </p>
+                                <div class="grid grid-cols-2 gap-10 mb-12">
+                                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 group/item hover:bg-white hover:shadow-xl transition-all">
+                                        <div class="text-3xl font-black text-slate-900 mb-1 tracking-tight">Verified</div>
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Module Ready</div>
+                                    </div>
+                                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 group/item hover:bg-white hover:shadow-xl transition-all">
+                                        <div class="text-3xl font-black text-slate-900 mb-1 tracking-tight">Hardened</div>
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Material Specs</div>
+                                    </div>
+                                </div>
+                                <a href="contact.html"
+                                    class="inline-flex items-center gap-8 bg-primary text-white px-12 py-6 rounded-2xl font-black uppercase tracking-widest shadow-2xl shadow-primary/20 hover:bg-amber-500 transition-all hover:-translate-y-2 group">
+                                    Inquire Now <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                            <div class="relative group order-1 lg:order-2">
+                                <div
+                                    class="absolute -inset-6 bg-primary/5 rounded-[4rem] group-hover:scale-105 transition-transform duration-1000">
+                                </div>
+                                <div
+                                    class="relative aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl border-[16px] border-white group-hover:border-slate-50 transition-colors">
+                                    <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a1930?auto=format&fit=crop&q=80&w=800"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Technical Specifications (Dashboard) -->
+        <section id="specifications" class="py-32 bg-slate-900 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.05] pointer-events-none"></div>
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+                    <div class="lg:col-span-5">
+                        <div
+                            class="text-amber-500 text-xs font-black uppercase tracking-[0.4em] mb-10 flex items-center gap-4">
+                            <span class="w-12 h-[1px] bg-amber-500"></span> Metrics
+                        </div>
+                        <h2 class="text-6xl font-black text-white tracking-tighter leading-[0.9] mb-10 uppercase">ENGINEERING <br /> <span class="text-slate-500 italic">DASHBOARD.</span></h2>
+                        <p class="text-slate-400 font-light text-xl leading-relaxed mb-12">
+                            Our verification processes exceed ISO benchmarks. We utilize laser-interferometric systems to ensure absolute geometrical accuracy.
+                        </p>
+                        <div class="flex gap-12">
+                            <div>
+                                <div class="text-4xl font-black text-white mb-1">99.9%</div>
+                                <div class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Accuracy</div>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-black text-white mb-1">0.003</div>
+                                <div class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Lead Error</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="group p-10 bg-white/5 rounded-[3rem] border border-white/10 hover:bg-white hover:border-white transition-all duration-500">
+                                <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-amber-500 mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-white group-hover:text-primary mb-4 uppercase tracking-tight">ISO Verified</h3>
+                                <p class="text-slate-500 text-sm font-light leading-relaxed">Full traceability of materials and heat treatment processes for every batch.</p>
+                            </div>
+                            <div class="group p-10 bg-white/5 rounded-[3rem] border border-white/10 hover:bg-white hover:border-white transition-all duration-500">
+                                <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-blue-500 mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-white group-hover:text-primary mb-4 uppercase tracking-tight">CNC Precision</h3>
+                                <p class="text-slate-500 text-sm font-light leading-relaxed">Utilizing 5-axis gear grinding technology for complex tooth profiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-root"></div>
+
+
+    <script>
+        function switchTab(index, btn) {
+            // Update Tab Active State
+            const tabs = document.querySelectorAll('.product-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active', 'text-white');
+                tab.classList.add('text-slate-400');
+            });
+            btn.classList.add('active', 'text-white');
+            btn.classList.remove('text-slate-400');
+
+            // Update Indicator
+            const indicator = document.getElementById('tab-indicator');
+            const btnWidth = btn.offsetWidth;
+            const btnLeft = btn.offsetLeft;
+            indicator.style.width = `${btnWidth}px`;
+            indicator.style.left = `${btnLeft}px`;
+
+            // Update Panels
+            const panels = document.querySelectorAll('.product-panel');
+            const targetId = btn.getAttribute('data-target');
+
+            panels.forEach(panel => {
+                panel.classList.add('opacity-0', 'invisible', 'translate-y-10', 'absolute');
+                panel.classList.remove('opacity-100', 'visible', 'translate-y-0', 'relative');
+            });
+
+            const activePanel = document.getElementById(targetId);
+            activePanel.classList.remove('opacity-0', 'invisible', 'translate-y-10', 'absolute');
+            activePanel.classList.add('opacity-100', 'visible', 'translate-y-0', 'relative');
+        }
+
+        // Initialize First Tab Position
+        window.addEventListener('DOMContentLoaded', () => {
+            const firstTab = document.querySelector('.product-tab.active');
+            if (firstTab) {
+                const indicator = document.getElementById('tab-indicator');
+                indicator.style.width = `${firstTab.offsetWidth}px`;
+                indicator.style.left = `${firstTab.offsetLeft}px`;
+                firstTab.classList.add('text-white');
+                firstTab.classList.remove('text-primary');
+            }
+        });
+    </script>
+    <!-- Global Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>

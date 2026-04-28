@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="md:text-[1vw]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Gallery | National Gears - Precision Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#002045',
+                        secondary: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body class="font-['Google_Sans'] bg-slate-50 overflow-x-hidden">
+    <div id="header-root"></div>
+
+    <main class="pt-40">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center mb-24">
+                <div
+                    class="inline-flex items-center gap-3 px-4 py-2 bg-primary/5 border border-primary/10 rounded-full text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-8">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Manufacturing Excellence
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black text-slate-900 mb-8 tracking-tighter leading-none uppercase">
+                    VISUAL <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">CHRONICLE</span>
+                </h1>
+                <p class="max-w-3xl mx-auto text-slate-500 text-xl font-light leading-relaxed">
+                    A window into our precision manufacturing world. From heavy-duty CNC cells to sub-micron inspection
+                    processes.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+                <!-- Factory Floor -->
+                <div
+                    class="relative group rounded-[2.5rem] overflow-hidden break-inside-avoid shadow-sm border border-slate-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1565173386913-54051ba83487?auto=format&fit=crop&q=80&w=800"
+                        alt="Factory Floor"
+                        class="w-full grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                        <span
+                            class="text-amber-400 text-[10px] font-black uppercase tracking-widest mb-2">Facility</span>
+                        <h3 class="text-2xl font-bold text-white tracking-tight">Main Production Floor</h3>
+                    </div>
+                </div>
+
+                <!-- CNC Machining -->
+                <div
+                    class="relative group rounded-[2.5rem] overflow-hidden break-inside-avoid shadow-sm border border-slate-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
+                        alt="CNC Machining"
+                        class="w-full grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                        <span
+                            class="text-amber-400 text-[10px] font-black uppercase tracking-widest mb-2">Process</span>
+                        <h3 class="text-2xl font-bold text-white tracking-tight">Precision CNC Milling</h3>
+                    </div>
+                </div>
+
+                <!-- Gears Closeup -->
+                <div
+                    class="relative group rounded-[2.5rem] overflow-hidden break-inside-avoid shadow-sm border border-slate-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800"
+                        alt="Gears"
+                        class="w-full grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                        <span
+                            class="text-amber-400 text-[10px] font-black uppercase tracking-widest mb-2">Products</span>
+                        <h3 class="text-2xl font-bold text-white tracking-tight">Helical Transmission Gears</h3>
+                    </div>
+                </div>
+
+                <!-- Inspection -->
+                <div
+                    class="relative group rounded-[2.5rem] overflow-hidden break-inside-avoid shadow-sm border border-slate-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a1930?auto=format&fit=crop&q=80&w=800"
+                        alt="Quality Inspection"
+                        class="w-full grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                        <span
+                            class="text-amber-400 text-[10px] font-black uppercase tracking-widest mb-2">Quality</span>
+                        <h3 class="text-2xl font-bold text-white tracking-tight">Metrology & CMM Lab</h3>
+                    </div>
+                </div>
+
+                <!-- Team at Work -->
+                <div
+                    class="relative group rounded-[2.5rem] overflow-hidden break-inside-avoid shadow-sm border border-slate-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
+                        alt="Team"
+                        class="w-full grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                        <span class="text-amber-400 text-[10px] font-black uppercase tracking-widest mb-2">Team</span>
+                        <h3 class="text-2xl font-bold text-white tracking-tight">Specialist Engineers</h3>
+                    </div>
+                </div>
+
+                <!-- Warehouse -->
+                <div
+                    class="relative group rounded-[2.5rem] overflow-hidden break-inside-avoid shadow-sm border border-slate-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
+                        alt="Logistics"
+                        class="w-full grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                        <span
+                            class="text-amber-400 text-[10px] font-black uppercase tracking-widest mb-2">Logistics</span>
+                        <h3 class="text-2xl font-bold text-white tracking-tight">Global Export Hub</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>
