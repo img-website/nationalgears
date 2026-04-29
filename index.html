@@ -74,7 +74,7 @@
 
     <div id="header-root"></div>
 
-    <main class="md:pt-24 pt-16">
+    <main class="md:pt-[5.5rem]">
         <section
             class="heroSection w-full relative min-h-[100dvh] overflow-hidden bg-primary flex items-center justify-center pt-10">
             <div class="absolute inset-0 z-0">
@@ -101,12 +101,12 @@
             <div
                 class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
                 <div
-                    class="inline-flex items-center gap-2 md:text-sm text-xs py-2 px-5 bg-white/5 backdrop-blur-md border border-white/10 text-amber-400 rounded-full font-bold uppercase tracking-[0.2em] mb-8 shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:bg-white/10 transition-colors">
+                    class="inline-flex items-center gap-2 md:text-sm text-xs py-2 px-5 bg-white/5 backdrop-blur-md border border-white/10 text-amber-400 rounded-full font-bold tracking-[0.2em] md:mb-8 mb-4 shadow-[0_0_20px_rgba(245,158,11,0.2)] lg:hover:bg-white/10 transition-colors">
                     <i data-lucide="settings" class="w-4 h-4 animate-[spin_4s_linear_infinite]"></i>
                     Welcome to National Gears
                 </div>
                 <h1
-                    class="font-bold xl:text-7xl lg:text-6xl md:text-5xl text-4xl text-white mb-8 leading-[1.15] max-w-5xl tracking-tight drop-shadow-2xl">
+                    class="font-bold xl:text-7xl lg:text-6xl md:text-5xl text-3xl text-white md:mb-8 mb-4 max-w-5xl tracking-tight drop-shadow-2xl">
                     Precision Engineering for the <br class="hidden md:block" />
                     <span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-500 to-amber-600 inline-block mt-2 animate-text-gradient">
@@ -120,29 +120,28 @@
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-5 w-full">
                     <button
-                        class="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white px-10 py-4 md:py-5 rounded-xl font-bold text-sm uppercase tracking-widest shadow-[0_10px_30px_-10px_rgba(245,158,11,0.6)] transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-3">
+                        class="w-auto bg-gradient-to-r from-amber-500 to-amber-600 lg:hover:from-amber-400 lg:hover:to-amber-500 text-white px-10 py-4 md:py-5 rounded-xl font-bold text-sm tracking-widest shadow-[0_10px_30px_-10px_rgba(245,158,11,0.6)] transition-all lg:hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-3">
                         <i data-lucide="compass" class="w-5 h-5"></i>
                         Explore Products
                     </button>
                     <button
-                        class="w-full sm:w-auto bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 md:py-5 rounded-xl font-bold text-sm uppercase tracking-widest transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-3">
+                        class="w-auto bg-white/5 lg:hover:bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 md:py-5 rounded-xl font-bold text-sm tracking-widest transition-all lg:hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-3">
                         <i data-lucide="file-text" class="w-5 h-5"></i>
                         Technical Specs
                     </button>
                 </div>
                 <div
-                    class="relative -bottom-12 flex flex-col items-center gap-2 opacity-60 animate-bounce cursor-pointer hover:opacity-100 transition-opacity">
-                    <span class="text-[10px] text-white uppercase tracking-[0.3em] font-bold">Scroll Down</span>
+                    class="md:flex hidden relative -bottom-12 flex-col items-center gap-2 opacity-60 animate-bounce cursor-pointer lg:hover:opacity-100 transition-opacity">
+                    <span class="text-[10px] text-white tracking-[0.3em] font-bold">Scroll Down</span>
                     <i data-lucide="chevron-down" class="w-5 h-5 text-white"></i>
                 </div>
             </div>
         </section>
 
         <!-- Professional Floating Marquee -->
-        <div class="relative w-full bg-slate-950 py-10 z-20">
+        <div class="relative w-full bg-slate-950 py-5 z-20">
             <div class="max-w-[1400px] mx-auto px-6">
-                <div
-                    class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 py-6 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+                <div class="relative overflow-hidden">
                     <!-- Subtle Edge Gradients -->
                     <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-950/80 to-transparent z-10">
                     </div>
@@ -157,8 +156,7 @@
                                     class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
                                     <i data-lucide="shield-check" class="w-5 h-5 text-amber-500"></i>
                                 </div>
-                                <span
-                                    class="text-sm md:text-base font-bold text-white tracking-widest uppercase">Precision
+                                <span class="text-sm md:text-base font-bold text-white tracking-widest">Precision
                                     Engineering</span>
                                 <span class="text-amber-500/30 font-light mx-2">•</span>
                             </div>
@@ -167,8 +165,7 @@
                                     class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
                                     <i data-lucide="microscope" class="w-5 h-5 text-amber-500"></i>
                                 </div>
-                                <span
-                                    class="text-sm md:text-base font-bold text-white tracking-widest uppercase">Sub-Micron
+                                <span class="text-sm md:text-base font-bold text-white tracking-widest">Sub-Micron
                                     Tolerances</span>
                                 <span class="text-amber-500/30 font-light mx-2">•</span>
                             </div>
@@ -177,7 +174,7 @@
                                     class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
                                     <i data-lucide="globe" class="w-5 h-5 text-amber-500"></i>
                                 </div>
-                                <span class="text-sm md:text-base font-bold text-white tracking-widest uppercase">Global
+                                <span class="text-sm md:text-base font-bold text-white tracking-widest">Global
                                     Excellence</span>
                                 <span class="text-amber-500/30 font-light mx-2">•</span>
                             </div>
@@ -186,7 +183,7 @@
                                     class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
                                     <i data-lucide="zap" class="w-5 h-5 text-amber-500"></i>
                                 </div>
-                                <span class="text-sm md:text-base font-bold text-white tracking-widest uppercase">Custom
+                                <span class="text-sm md:text-base font-bold text-white tracking-widest">Custom
                                     Solutions</span>
                                 <span class="text-amber-500/30 font-light mx-2">•</span>
                             </div>
@@ -198,8 +195,7 @@
                                     class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
                                     <i data-lucide="shield-check" class="w-5 h-5 text-amber-500"></i>
                                 </div>
-                                <span
-                                    class="text-sm md:text-base font-bold text-white tracking-widest uppercase">Precision
+                                <span class="text-sm md:text-base font-bold text-white tracking-widest">Precision
                                     Engineering</span>
                                 <span class="text-amber-500/30 font-light mx-2">•</span>
                             </div>
@@ -208,8 +204,7 @@
                                     class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
                                     <i data-lucide="microscope" class="w-5 h-5 text-amber-500"></i>
                                 </div>
-                                <span
-                                    class="text-sm md:text-base font-bold text-white tracking-widest uppercase">Sub-Micron
+                                <span class="text-sm md:text-base font-bold text-white tracking-widest">Sub-Micron
                                     Tolerances</span>
                                 <span class="text-amber-500/30 font-light mx-2">•</span>
                             </div>
@@ -218,7 +213,7 @@
                                     class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
                                     <i data-lucide="globe" class="w-5 h-5 text-amber-500"></i>
                                 </div>
-                                <span class="text-sm md:text-base font-bold text-white tracking-widest uppercase">Global
+                                <span class="text-sm md:text-base font-bold text-white tracking-widest">Global
                                     Excellence</span>
                                 <span class="text-amber-500/30 font-light mx-2">•</span>
                             </div>
@@ -227,7 +222,7 @@
                                     class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:bg-amber-500/20 transition-all duration-300">
                                     <i data-lucide="zap" class="w-5 h-5 text-amber-500"></i>
                                 </div>
-                                <span class="text-sm md:text-base font-bold text-white tracking-widest uppercase">Custom
+                                <span class="text-sm md:text-base font-bold text-white tracking-widest">Custom
                                     Solutions</span>
                                 <span class="text-amber-500/30 font-light mx-2">•</span>
                             </div>
@@ -237,72 +232,69 @@
             </div>
         </div>
 
-        <section
-            class="trustedBySection w-full overflow-hidden bg-slate-50 border-y border-slate-200/50 relative py-8 md:py-12">
+        <section class="trustedBySection w-full overflow-hidden bg-slate-50 border-y border-slate-200/50 relative py-8">
             <div
-                class="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none">
+                class="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none">
             </div>
             <div
-                class="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none">
+                class="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none">
             </div>
-
-            <div
-                class="w-full max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+            <div class="w-full max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center md:gap-16">
                 <h2
-                    class="text-xs md:text-sm font-bold text-slate-400 tracking-[0.2em] uppercase whitespace-nowrap md:border-r md:border-slate-300 md:pr-8">
+                    class="text-xs md:text-sm font-bold text-slate-400 tracking-[0.2em] whitespace-nowrap md:border-r md:border-slate-300 md:pr-8 md:pb-0 pb-3">
                     Trusted By Industry Leaders
                 </h2>
                 <div class="swiper clientLogosSwiper w-full">
                     <div class="swiper-wrapper items-center">
                         <div class="swiper-slide flex justify-center">
                             <img src="https://placehold.co/200x80/f8fafc/64748b?text=AEROMOTIVE&font=montserrat"
-                                alt="AEROMOTIVE"
-                                class="h-24 md:h-32 object-contain opacity-40 hover:opacity-100 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0">
+                                alt="AEROMOTIVE" title="AEROMOTIVE"
+                                class="h-auto w-40 object-contain opacity-40 lg:hover:opacity-100 lg:hover:scale-105 transition-all duration-300 grayscale lg:hover:grayscale-0">
                         </div>
                         <div class="swiper-slide flex justify-center">
                             <img src="https://placehold.co/200x80/f8fafc/64748b?text=HYDROCORE&font=montserrat"
-                                alt="HYDROCORE"
-                                class="h-24 md:h-32 object-contain opacity-40 hover:opacity-100 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0">
+                                alt="HYDROCORE" title="HYDROCORE"
+                                class="h-auto w-40 object-contain opacity-40 lg:hover:opacity-100 lg:hover:scale-105 transition-all duration-300 grayscale lg:hover:grayscale-0">
                         </div>
                         <div class="swiper-slide flex justify-center">
                             <img src="https://placehold.co/200x80/f8fafc/64748b?text=STEELBOUND&font=montserrat"
-                                alt="STEELBOUND"
-                                class="h-24 md:h-32 object-contain opacity-40 hover:opacity-100 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0">
+                                alt="STEELBOUND" title="STEELBOUND"
+                                class="h-auto w-40 object-contain opacity-40 lg:hover:opacity-100 lg:hover:scale-105 transition-all duration-300 grayscale lg:hover:grayscale-0">
                         </div>
                         <div class="swiper-slide flex justify-center">
                             <img src="https://placehold.co/200x80/f8fafc/64748b?text=PRECISION%2B&font=montserrat"
-                                alt="PRECISION+"
-                                class="h-24 md:h-32 object-contain opacity-40 hover:opacity-100 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0">
+                                alt="PRECISION+" title="PRECISION+"
+                                class="h-auto w-40 object-contain opacity-40 lg:hover:opacity-100 lg:hover:scale-105 transition-all duration-300 grayscale lg:hover:grayscale-0">
                         </div>
                         <div class="swiper-slide flex justify-center">
                             <img src="https://placehold.co/200x80/f8fafc/64748b?text=NEXTGEN&font=montserrat"
-                                alt="NEXTGEN"
-                                class="h-24 md:h-32 object-contain opacity-40 hover:opacity-100 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0">
+                                alt="NEXTGEN" title="NEXTGEN"
+                                class="h-auto w-40 object-contain opacity-40 lg:hover:opacity-100 lg:hover:scale-105 transition-all duration-300 grayscale lg:hover:grayscale-0">
                         </div>
                         <div class="swiper-slide flex justify-center">
                             <img src="https://placehold.co/200x80/f8fafc/64748b?text=GLOBAL+TECH&font=montserrat"
-                                alt="GLOBAL TECH"
-                                class="h-24 md:h-32 object-contain opacity-40 hover:opacity-100 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0">
+                                alt="GLOBAL TECH" title="GLOBAL TECH"
+                                class="h-auto w-40 object-contain opacity-40 lg:hover:opacity-100 lg:hover:scale-105 transition-all duration-300 grayscale lg:hover:grayscale-0">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="capabilitiesSection py-20 lg:py-28 bg-white w-full overflow-hidden relative">
+        <section class="capabilitiesSection lg:py-16 py-10 bg-white w-full overflow-hidden relative">
             <div class="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none opacity-30">
                 <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-slate-50 to-transparent"></div>
                 <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-100 rounded-full blur-[100px]"></div>
             </div>
             <div class="w-full max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="flex flex-col md:flex-row md:items-end justify-between md:pb-16 pb-8 gap-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between md:pb-8 pb-6 gap-6">
                     <div class="max-w-2xl">
                         <div
-                            class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/5 text-primary rounded-lg text-xs font-bold tracking-widest uppercase mb-4 border border-primary/10">
+                            class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/5 text-primary rounded-lg text-xs font-bold tracking-widest mb-4 border border-primary/10">
                             <i data-lucide="layers" class="w-4 h-4"></i> Expertise
                         </div>
                         <h2
-                            class="font-bold text-4xl md:text-5xl lg:text-6xl text-slate-900 leading-[1.1] mb-4 tracking-tight">
+                            class="font-bold text-3xl md:text-4xl lg:text-5xl text-slate-900 leading-[1.1] mb-4 tracking-tight">
                             Our <span
                                 class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Capabilities</span>
                         </h2>
@@ -312,7 +304,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col items-start md:items-end gap-6">
-                        <a class="group text-primary font-bold md:text-sm text-xs flex gap-2 uppercase tracking-widest hover:text-amber-500 transition-all"
+                        <a class="group text-primary font-bold md:text-sm text-xs flex gap-2 tracking-widest hover:text-amber-500 transition-all"
                             href="#">
                             <span
                                 class="border-b-2 border-transparent group-hover:border-amber-500 pb-0.5 transition-colors">View
@@ -335,11 +327,11 @@
                     </div>
                 </div>
 
-                <div class="swiper capabilitiesSwiper !pb-20 !pt-4">
+                <div class="swiper capabilitiesSwiper !pt-4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide h-auto">
                             <div
-                                class="group h-full flex flex-col rounded-[2rem] bg-white border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer hover:-translate-y-2 overflow-hidden relative">
+                                class="group h-full flex flex-col rounded-[2rem] bg-white border border-slate-200 shadow-sm lg:hover:shadow-2xl transition-all duration-500 cursor-pointer lg:hover:-translate-y-2 overflow-hidden relative">
                                 <div class="h-64 overflow-hidden relative p-2">
                                     <img alt="Heavy duty spur gears"
                                         class="w-full h-full object-cover rounded-[1.5rem] transition-transform duration-700 group-hover:scale-105"
@@ -348,7 +340,7 @@
                                         class="absolute inset-0 rounded-[1.5rem] bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
                                     </div>
                                     <div
-                                        class="absolute top-6 right-6 px-4 py-1.5 bg-white/20 backdrop-blur-md text-white rounded-full text-xs font-bold uppercase tracking-widest shadow-lg border border-white/30">
+                                        class="absolute top-6 right-6 px-4 py-1.5 bg-white/20 backdrop-blur-md text-white rounded-full text-xs font-bold tracking-widest shadow-lg border border-white/30">
                                         Flagship</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-grow">
@@ -359,16 +351,18 @@
                                     <h3
                                         class="font-bold text-2xl text-slate-900 mb-3 group-hover:text-primary transition-colors">
                                         Heavy Duty Spur Gears</h3>
-                                    <p class="text-slate-600 lg:text-base md:text-base text-sm mb-8 flex-grow leading-relaxed font-light">Precision-ground
+                                    <p
+                                        class="text-slate-600 lg:text-base md:text-base text-sm mb-8 flex-grow leading-relaxed font-light">
+                                        Precision-ground
                                         spur gears designed for maximum torque and minimal acoustic signature in heavy
                                         machinery.</p>
                                     <div class="flex flex-wrap gap-2 mt-auto pt-6 border-t border-slate-100">
                                         <span
-                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">HIGH
-                                            TORQUE</span>
+                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">High
+                                            Torque</span>
                                         <span
-                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">LOW
-                                            NOISE</span>
+                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">Low
+                                            Noise</span>
                                     </div>
                                 </div>
                             </div>
@@ -392,16 +386,18 @@
                                     <h3
                                         class="font-bold text-2xl text-slate-900 mb-3 group-hover:text-primary transition-colors">
                                         Helical Systems</h3>
-                                    <p class="text-slate-600 lg:text-base md:text-base text-sm mb-8 flex-grow leading-relaxed font-light">Quiet operation
+                                    <p
+                                        class="text-slate-600 lg:text-base md:text-base text-sm mb-8 flex-grow leading-relaxed font-light">
+                                        Quiet operation
                                         and higher load capacity specifically engineered for demanding automotive
                                         applications.</p>
                                     <div class="flex flex-wrap gap-2 mt-auto pt-6 border-t border-slate-100">
                                         <span
-                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">ALLOY
-                                            STEEL</span>
+                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">Alloy
+                                            Steel</span>
                                         <span
-                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">CUSTOM
-                                            RATIOS</span>
+                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">Custom
+                                            Ratios</span>
                                     </div>
                                 </div>
                             </div>
@@ -425,16 +421,18 @@
                                     <h3
                                         class="font-bold text-2xl text-slate-900 mb-3 group-hover:text-primary transition-colors">
                                         Bevel &amp; Miter</h3>
-                                    <p class="text-slate-600 lg:text-base md:text-base text-sm mb-8 flex-grow leading-relaxed font-light">Optimized power
+                                    <p
+                                        class="text-slate-600 lg:text-base md:text-base text-sm mb-8 flex-grow leading-relaxed font-light">
+                                        Optimized power
                                         transmission for perpendicular shaft arrangements with perfect tooth contact.
-                                        </p>
+                                    </p>
                                     <div class="flex flex-wrap gap-2 mt-auto pt-6 border-t border-slate-100">
                                         <span
                                             class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">ISO
-                                            CERTIFIED</span>
+                                            Certified</span>
                                         <span
                                             class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">90°
-                                            DRIVE</span>
+                                            Drive</span>
                                     </div>
                                 </div>
                             </div>
@@ -458,15 +456,17 @@
                                     <h3
                                         class="font-bold text-2xl text-slate-900 mb-3 group-hover:text-primary transition-colors">
                                         Worm Gears</h3>
-                                    <p class="text-slate-600 lg:text-base md:text-base text-sm mb-8 flex-grow leading-relaxed font-light">High-ratio speed
+                                    <p
+                                        class="text-slate-600 lg:text-base md:text-base text-sm mb-8 flex-grow leading-relaxed font-light">
+                                        High-ratio speed
                                         reduction solutions offering smooth and quiet operation for conveyor systems.
                                     </p>
                                     <div class="flex flex-wrap gap-2 mt-auto pt-6 border-t border-slate-100">
                                         <span
-                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">HIGH
-                                            RATIO</span>
+                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">High
+                                            Ratio</span>
                                         <span
-                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">COMPACT</span>
+                                            class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold tracking-wider rounded-lg border border-slate-100 shadow-sm">Compact</span>
                                     </div>
                                 </div>
                             </div>
@@ -474,19 +474,17 @@
                     </div>
 
                     <div
-                        class="swiper-pagination !bottom-0 [&_.swiper-pagination-bullet]:w-3 [&_.swiper-pagination-bullet]:h-3 [&_.swiper-pagination-bullet]:bg-slate-400 [&_.swiper-pagination-bullet]:opacity-50 [&_.swiper-pagination-bullet]:transition-all [&_.swiper-pagination-bullet]:duration-[400ms] [&_.swiper-pagination-bullet]:ease-[cubic-bezier(0.4,0,0.2,1)] [&_.swiper-pagination-bullet]:rounded-[99px] [&_.swiper-pagination-bullet]:!mx-[6px] [&_.swiper-pagination-bullet:hover]:opacity-80 [&_.swiper-pagination-bullet:hover]:bg-amber-500 [&_.swiper-pagination-bullet:hover]:scale-[1.2] [&_.swiper-pagination-bullet-active]:!w-10 [&_.swiper-pagination-bullet-active]:!opacity-100 [&_.swiper-pagination-bullet-active]:!bg-amber-500 [&_.swiper-pagination-bullet-active]:!scale-100 [&_.swiper-pagination-bullet-active]:shadow-[0_4px_10px_rgba(245,158,11,0.4)]">
+                        class="swiper-pagination md:!hidden !static pt-8 !bottom-0 [&_.swiper-pagination-bullet]:w-3 [&_.swiper-pagination-bullet]:h-3 [&_.swiper-pagination-bullet]:bg-slate-400 [&_.swiper-pagination-bullet]:opacity-50 [&_.swiper-pagination-bullet]:transition-all [&_.swiper-pagination-bullet]:duration-[400ms] [&_.swiper-pagination-bullet]:ease-[cubic-bezier(0.4,0,0.2,1)] [&_.swiper-pagination-bullet]:rounded-[99px] [&_.swiper-pagination-bullet]:!mx-[6px] [&_.swiper-pagination-bullet:hover]:opacity-80 [&_.swiper-pagination-bullet:hover]:bg-amber-500 [&_.swiper-pagination-bullet:hover]:scale-[1.2] [&_.swiper-pagination-bullet-active]:!w-10 [&_.swiper-pagination-bullet-active]:!opacity-100 [&_.swiper-pagination-bullet-active]:!bg-amber-500 [&_.swiper-pagination-bullet-active]:!scale-100 [&_.swiper-pagination-bullet-active]:shadow-[0_4px_10px_rgba(245,158,11,0.4)]">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 md:py-32 relative overflow-hidden bg-[#00142D] group/section border-y border-white/5">
-            <!-- Animated Background Grid & Overlay -->
+        <section class="lg:py-16 py-10 relative overflow-hidden bg-[#00142D] group/section border-y border-white/5">
             <div class="absolute inset-0 pointer-events-none z-0">
                 <div
                     class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:60px_60px]">
                 </div>
-                <!-- Glowing orbs in background -->
                 <div
                     class="absolute top-1/2 left-[20%] w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] mix-blend-screen transform -translate-y-1/2 opacity-60 group-hover/section:opacity-90 transition-opacity duration-1000">
                 </div>
@@ -494,29 +492,24 @@
                     class="absolute top-1/2 right-[20%] w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[120px] mix-blend-screen transform -translate-y-1/2 opacity-60 group-hover/section:opacity-90 transition-opacity duration-1000">
                 </div>
             </div>
-
-            <!-- Massive Watermark Text -->
             <div
                 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none select-none z-0">
-                <h2
-                    class="text-[14vw] font-black text-white/[0.02] tracking-tighter uppercase whitespace-nowrap leading-none drop-shadow-2xl">
-                    IMPACT</h2>
+                <h2 class="!text-[20vw] !text-white/5 !font-bold !Impact">Impact</h2>
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 relative z-10">
-                <!-- Connecting Gradient Line -->
+            <div class="max-w-8xl mx-auto px-6 relative z-10">
                 <div
                     class="hidden lg:block absolute top-1/2 left-10 right-10 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-y-1/2 z-0">
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 relative z-10">
                     <div
-                        class="relative bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 text-center hover:bg-white/[0.04] transition-all duration-700 group overflow-hidden hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(245,158,11,0.2)] flex flex-col justify-center min-h-[300px]">
+                        class="relative lg:bg-white/[0.02] bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 text-center hover:lg:bg-white/[0.04] transition-all duration-700 group overflow-hidden hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(245,158,11,0.2)] flex flex-col justify-center min-h-[300px]">
                         <div
-                            class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-amber-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-amber-500/60 to-transparent lg:opacity-0 opacity-100 group-hover:lg:opacity-100 transition-opacity duration-500">
                         </div>
                         <div
-                            class="absolute inset-0 bg-gradient-to-b from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                            class="absolute inset-0 bg-gradient-to-b from-amber-500/10 to-transparent lg:opacity-0 opacity-100 group-hover:lg:opacity-100 transition-opacity duration-700 pointer-events-none">
                         </div>
 
                         <div
@@ -526,16 +519,16 @@
                         <div
                             class="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 mb-3 tracking-tighter drop-shadow-sm">
                             250<span class="text-amber-500 text-3xl align-top">+</span></div>
-                        <p class="text-[10px] md:text-xs font-bold text-blue-200/70 tracking-[0.25em] uppercase">
+                        <p class="text-[10px] md:text-xs font-bold text-blue-200/70 tracking-[0.25em]">
                             Precision Machines</p>
                     </div>
                     <div
-                        class="relative bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 text-center hover:bg-white/[0.04] transition-all duration-700 group overflow-hidden hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(59,130,246,0.2)] flex flex-col justify-center min-h-[300px] lg:translate-y-8">
+                        class="relative lg:bg-white/[0.02] bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 text-center hover:lg:bg-white/[0.04] transition-all duration-700 group overflow-hidden hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(59,130,246,0.2)] flex flex-col justify-center min-h-[300px] lg:translate-y-8">
                         <div
-                            class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-blue-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-blue-500/60 to-transparent lg:opacity-0 opacity-100 group-hover:lg:opacity-100 transition-opacity duration-500">
                         </div>
                         <div
-                            class="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                            class="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-transparent lg:opacity-0 opacity-100 group-hover:lg:opacity-100 transition-opacity duration-700 pointer-events-none">
                         </div>
 
                         <div
@@ -545,16 +538,16 @@
                         <div
                             class="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 mb-3 tracking-tighter drop-shadow-sm">
                             15k<span class="text-blue-400 text-3xl align-top">+</span></div>
-                        <p class="text-[10px] md:text-xs font-bold text-blue-200/70 tracking-[0.25em] uppercase">Units
+                        <p class="text-[10px] md:text-xs font-bold text-blue-200/70 tracking-[0.25em]">Units
                             Delivered</p>
                     </div>
                     <div
-                        class="relative bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 text-center hover:bg-white/[0.04] transition-all duration-700 group overflow-hidden hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(20,184,166,0.2)] flex flex-col justify-center min-h-[300px]">
+                        class="relative lg:bg-white/[0.02] bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 text-center hover:lg:bg-white/[0.04] transition-all duration-700 group overflow-hidden hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(20,184,166,0.2)] flex flex-col justify-center min-h-[300px]">
                         <div
-                            class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-teal-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-teal-500/60 to-transparent lg:opacity-0 opacity-100 group-hover:lg:opacity-100 transition-opacity duration-500">
                         </div>
                         <div
-                            class="absolute inset-0 bg-gradient-to-b from-teal-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                            class="absolute inset-0 bg-gradient-to-b from-teal-500/10 to-transparent lg:opacity-0 opacity-100 group-hover:lg:opacity-100 transition-opacity duration-700 pointer-events-none">
                         </div>
 
                         <div
@@ -564,16 +557,16 @@
                         <div
                             class="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 mb-3 tracking-tighter drop-shadow-sm">
                             0.02<span class="text-teal-400 text-3xl align-top">μ</span></div>
-                        <p class="text-[10px] md:text-xs font-bold text-blue-200/70 tracking-[0.25em] uppercase">Micron
+                        <p class="text-[10px] md:text-xs font-bold text-blue-200/70 tracking-[0.25em]">Micron
                             Tolerance</p>
                     </div>
                     <div
-                        class="relative bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 text-center hover:bg-white/[0.04] transition-all duration-700 group overflow-hidden hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(245,158,11,0.2)] flex flex-col justify-center min-h-[300px] lg:translate-y-8">
+                        class="relative lg:bg-white/[0.02] bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 text-center hover:lg:bg-white/[0.04] transition-all duration-700 group overflow-hidden hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(245,158,11,0.2)] flex flex-col justify-center min-h-[300px] lg:translate-y-8">
                         <div
-                            class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-amber-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-amber-500/60 to-transparent lg:opacity-0 opacity-100 group-hover:lg:opacity-100 transition-opacity duration-500">
                         </div>
                         <div
-                            class="absolute inset-0 bg-gradient-to-b from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                            class="absolute inset-0 bg-gradient-to-b from-amber-500/10 to-transparent lg:opacity-0 opacity-100 group-hover:lg:opacity-100 transition-opacity duration-700 pointer-events-none">
                         </div>
 
                         <div
@@ -583,17 +576,17 @@
                         <div
                             class="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 mb-3 tracking-tighter drop-shadow-sm">
                             35<span class="text-amber-500 text-3xl align-top">+</span></div>
-                        <p class="text-[10px] md:text-xs font-bold text-blue-200/70 tracking-[0.25em] uppercase">Years
+                        <p class="text-[10px] md:text-xs font-bold text-blue-200/70 tracking-[0.25em]">Years
                             Expertise</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-section-padding bg-slate-50 relative overflow-hidden py-16">
-            <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <section class="py-section-padding bg-slate-50 relative overflow-hidden lg:py-16 py-10">
+            <div class="max-w-8xl mx-auto px-6 relative z-10">
                 <div
-                    class="p-10 md:p-16 lg:p-20 rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(0,32,69,0.5)] flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden border border-slate-700/30 group">
+                    class="p-10 md:p-16 rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(0,32,69,0.5)] flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden border border-slate-700/30 group">
                     <div class="absolute inset-0 z-0 bg-primary">
                         <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000"
                             class="w-full h-full object-cover mix-blend-luminosity opacity-20 group-hover:scale-105 transition-transform duration-1000 ease-in-out"
@@ -610,9 +603,9 @@
                         </div>
                     </div>
 
-                    <div class="max-w-xl relative z-10">
+                    <div class="max-w-2xl relative z-10">
                         <div
-                            class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-bold tracking-[0.2em] uppercase mb-6 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+                            class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-bold tracking-[0.2em] mb-6 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
                             <span class="relative flex h-2 w-2 mr-1">
                                 <span
                                     class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
@@ -621,11 +614,8 @@
                             Start Your Project
                         </div>
                         <h2
-                            class="lg:text-5xl md:text-4xl text-3xl font-black text-white mb-4 tracking-tighter leading-none uppercase drop-shadow-md">
-                            Ready to engineer your <br />
-                            <span
-                                class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-500 to-amber-600">custom
-                                solution?</span>
+                            class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-4 tracking-tighter drop-shadow-md">
+                            Ready to engineer your custom solution?
                         </h2>
                         <p class="lg:text-base md:text-base text-sm text-slate-300 font-light leading-relaxed mb-10">
                             Our engineering team is ready to review your blueprints and provide a comprehensive
@@ -633,15 +623,15 @@
                         </p>
 
                         <div
-                            class="flex items-center gap-6 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md w-fit">
+                            class="flex md:w-fit w-full md:flex-row flex-col-reverse items-center gap-6 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md w-fit">
                             <div class="flex -space-x-4">
-                                <img class="w-12 h-12 rounded-full border-2 border-slate-800 object-cover"
+                                <img class="size-12 shrink-0 rounded-full border-2 border-slate-800 object-cover"
                                     src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100"
                                     alt="Engineer">
-                                <img class="w-12 h-12 rounded-full border-2 border-slate-800 object-cover"
+                                <img class="size-12 shrink-0 rounded-full border-2 border-slate-800 object-cover"
                                     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100"
                                     alt="Engineer">
-                                <img class="w-12 h-12 rounded-full border-2 border-slate-800 object-cover"
+                                <img class="size-12 shrink-0 rounded-full border-2 border-slate-800 object-cover"
                                     src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80&w=100"
                                     alt="Engineer">
                                 <div
@@ -695,15 +685,238 @@
                         </div>
 
                         <div class="text-center mt-3 relative z-10">
-                            <h3
-                                class="text-white font-black tracking-[0.2em] uppercase text-sm md:text-base mb-2 drop-shadow-md">
+                            <h3 class="text-white font-black tracking-[0.2em] text-sm md:text-base mb-2 drop-shadow-md">
                                 Scan To Connect
                             </h3>
-                            <div
-                                class="flex items-center justify-center gap-2 text-blue-100 text-xs md:text-sm font-bold bg-white/5 py-1.5 px-4 rounded-full border border-white/10 backdrop-blur-sm">
-                                <i data-lucide="smartphone-nfc" class="w-4 h-4 text-amber-400"></i>
-                                <span>Open website instantly</span>
+                            <a href="https://wa.me/1234567890" target="_blank"
+                                class="flex items-center justify-center gap-2 text-blue-100 text-xs md:text-sm font-bold bg-white/5 py-1.5 px-4 rounded-full border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all">
+                                <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg>
+                                <span>Connect on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="testimonialsSection lg:py-16 py-10 bg-white relative overflow-hidden">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center md:pb-8 pb-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/5 text-primary rounded-lg text-xs font-bold tracking-widest mb-4 border border-primary/10">
+                        <i data-lucide="message-square" class="w-4 h-4"></i> Client Reviews
+                    </div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-none">
+                        Trusted by <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Global
+                            Leaders</span>
+                    </h2>
+                </div>
+
+                <div class="relative">
+                    <div class="swiper testimonialsSwiper relative">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide h-auto">
+                                <div
+                                    class="bg-slate-50 border border-slate-100 p-8 md:p-10 rounded-[2.5rem] h-full flex flex-col lg:hover:border-primary/20 lg:hover:shadow-xl transition-all duration-500 group">
+                                    <div class="flex items-center gap-1 mb-8">
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                    </div>
+                                    <p class="text-slate-600 italic leading-relaxed text-lg mb-10 flex-grow font-light">
+                                        "National Gears has been our primary supplier for over a decade. Their precision
+                                        and
+                                        reliability are unmatched in the industry. The gear quality is consistently
+                                        world-class."</p>
+                                    <div class="flex items-center gap-4 pt-8 border-t border-slate-200">
+                                        <div
+                                            class="w-14 h-14 rounded-full bg-slate-200 overflow-hidden border-2 border-white shadow-sm">
+                                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100"
+                                                class="w-full h-full object-cover" alt="Client">
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-slate-900 text-lg">Robert Miller</p>
+                                            <p class="text-slate-500 text-sm">CTO, Aeromotive Systems</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="swiper-slide h-auto">
+                                <div
+                                    class="bg-slate-50 border border-slate-100 p-8 md:p-10 rounded-[2.5rem] h-full flex flex-col hover:border-primary/20 hover:shadow-xl transition-all duration-500 group">
+                                    <div class="flex items-center gap-1 mb-8">
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                    </div>
+                                    <p class="text-slate-600 italic leading-relaxed text-lg mb-10 flex-grow font-light">
+                                        "The
+                                        technical support and engineering depth they provide is truly exceptional. They
+                                        helped us solve a complex vibration issue in our latest turbine gearbox design."
+                                    </p>
+                                    <div class="flex items-center gap-4 pt-8 border-t border-slate-200">
+                                        <div
+                                            class="w-14 h-14 rounded-full bg-slate-200 overflow-hidden border-2 border-white shadow-sm">
+                                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100"
+                                                class="w-full h-full object-cover" alt="Client">
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-slate-900 text-lg">Sarah Jenkins</p>
+                                            <p class="text-slate-500 text-sm">Lead Engineer, Hydrocore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-auto">
+                                <div
+                                    class="bg-slate-50 border border-slate-100 p-8 md:p-10 rounded-[2.5rem] h-full flex flex-col hover:border-primary/20 hover:shadow-xl transition-all duration-500 group">
+                                    <div class="flex items-center gap-1 mb-8">
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                    </div>
+                                    <p class="text-slate-600 italic leading-relaxed text-lg mb-10 flex-grow font-light">
+                                        "Switching to National Gears reduced our transmission failure rates by 40%.
+                                        Their
+                                        attention to detail and sub-micron tolerance adherence is rare and valuable."
+                                    </p>
+                                    <div class="flex items-center gap-4 pt-8 border-t border-slate-200">
+                                        <div
+                                            class="w-14 h-14 rounded-full bg-slate-200 overflow-hidden border-2 border-white shadow-sm">
+                                            <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80&w=100"
+                                                class="w-full h-full object-cover" alt="Client">
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-slate-900 text-lg">James Wilson</p>
+                                            <p class="text-slate-500 text-sm">Ops Director, Steelbound</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-auto">
+                                <div
+                                    class="bg-slate-50 border border-slate-100 p-8 md:p-10 rounded-[2.5rem] h-full flex flex-col hover:border-primary/20 hover:shadow-xl transition-all duration-500 group">
+                                    <div class="flex items-center gap-1 mb-8">
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                                    </div>
+                                    <p class="text-slate-600 italic leading-relaxed text-lg mb-10 flex-grow font-light">
+                                        "Switching to National Gears reduced our transmission failure rates by 40%.
+                                        Their
+                                        attention to detail and sub-micron tolerance adherence is rare and valuable."
+                                    </p>
+                                    <div class="flex items-center gap-4 pt-8 border-t border-slate-200">
+                                        <div
+                                            class="w-14 h-14 rounded-full bg-slate-200 overflow-hidden border-2 border-white shadow-sm">
+                                            <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80&w=100"
+                                                class="w-full h-full object-cover" alt="Client">
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-slate-900 text-lg">James Wilson</p>
+                                            <p class="text-slate-500 text-sm">Ops Director, Steelbound</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="testimonials-prev absolute top-1/2 md:-left-4 lg:-left-6 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white hover:border-primary transition-all shadow-lg hidden md:flex">
+                        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                    </button>
+                    <button
+                        class="testimonials-next absolute top-1/2 md:-right-4 lg:-right-6 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white hover:border-primary transition-all shadow-lg hidden md:flex">
+                        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                    </button>
+                </div>
+
+                <div
+                    class="swiper-pagination testimonials-pagination !bottom-0 [&_.swiper-pagination-bullet]:w-3 [&_.swiper-pagination-bullet]:h-3 [&_.swiper-pagination-bullet]:bg-slate-300 [&_.swiper-pagination-bullet]:opacity-100 [&_.swiper-pagination-bullet-active]:!w-10 [&_.swiper-pagination-bullet-active]:!bg-amber-500 [&_.swiper-pagination-bullet-active]:rounded-full transition-all duration-300">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faqSection lg:py-16 py-10 bg-slate-50 relative overflow-hidden">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center md:pb-8 pb-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/5 text-primary rounded-lg text-xs font-bold tracking-widest mb-4 border border-primary/10">
+                        <i data-lucide="help-circle" class="w-4 h-4"></i> FAQ
+                    </div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-none">
+                        Common <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Questions</span>
+                    </h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item bg-white rounded-3xl border border-slate-100 overflow-hidden group">
+                        <button onclick="toggleFaq(this)"
+                            class="w-full px-8 py-6 text-left flex items-center justify-between gap-4 group/btn">
+                            <span
+                                class="md:text-lg text-base font-bold text-slate-900 group-hover/btn:text-primary transition-colors">What
+                                is the typical lead time for custom gear manufacturing?</span>
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover/btn:bg-primary group-hover/btn:text-white transition-all transform group-[.active]:rotate-180">
+                                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-8 pb-8">
+                            <p class="text-slate-500 leading-relaxed font-light">Standard lead times range from 4 to 8
+                                weeks depending on complexity, material availability, and order volume. For urgent
+                                requirements, we offer expedited production services.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="faq-item bg-white rounded-3xl border border-slate-100 overflow-hidden group">
+                        <button onclick="toggleFaq(this)"
+                            class="w-full px-8 py-6 text-left flex items-center justify-between gap-4 group/btn">
+                            <span
+                                class="md:text-lg text-base font-bold text-slate-900 group-hover/btn:text-primary transition-colors">What
+                                quality certifications do you hold?</span>
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover/btn:bg-primary group-hover/btn:text-white transition-all transform group-[.active]:rotate-180">
+                                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-8 pb-8">
+                            <p class="text-slate-500 leading-relaxed font-light">National Gears is ISO 9001:2015
+                                certified. Our inspection facility is equipped with Mitutoyo CMMs and Profile testers to
+                                ensure DIN 3 quality standards.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="faq-item bg-white rounded-3xl border border-slate-100 overflow-hidden group">
+                        <button onclick="toggleFaq(this)"
+                            class="w-full px-8 py-6 text-left flex items-center justify-between gap-4 group/btn">
+                            <span
+                                class="md:text-lg text-base font-bold text-slate-900 group-hover/btn:text-primary transition-colors">Do
+                                you provide material test reports (MTR)?</span>
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover/btn:bg-primary group-hover/btn:text-white transition-all transform group-[.active]:rotate-180">
+                                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-8 pb-8">
+                            <p class="text-slate-500 leading-relaxed font-light">Yes, every order comes with full
+                                traceability documentation, including Material Test Reports, Heat Treatment
+                                certificates, and detailed Inspection reports.</p>
                         </div>
                     </div>
                 </div>
@@ -731,8 +944,8 @@
                     disableOnInteraction: false,
                 },
                 breakpoints: {
-                    320: { slidesPerView: 2 },
-                    640: { slidesPerView: 3 },
+                    320: { slidesPerView: 3 },
+                    640: { slidesPerView: 4 },
                     768: { slidesPerView: 4 },
                     1024: { slidesPerView: 5 },
                 },
@@ -756,6 +969,47 @@
                     1024: { slidesPerView: 3 },
                 },
             });
+        }
+
+        if (document.querySelector(".testimonialsSwiper")) {
+            var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".testimonials-next",
+                    prevEl: ".testimonials-prev",
+                },
+                breakpoints: {
+                    768: { slidesPerView: 2 },
+                    1280: { slidesPerView: 3 },
+                },
+            });
+        }
+
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('.transform');
+            const isActive = btn.parentElement.classList.contains('active');
+
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+
+            if (!isActive) {
+                answer.classList.remove('hidden');
+                btn.parentElement.classList.add('active');
+            } else {
+                answer.classList.add('hidden');
+                btn.parentElement.classList.remove('active');
+            }
         }
     </script>
 

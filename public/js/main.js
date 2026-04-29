@@ -87,20 +87,20 @@ function renderHeader() {
     };
 
     headerRoot.innerHTML = `
-    <header class="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 bg-white/80 backdrop-blur-xl border border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-2xl transition-all duration-300">
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 bg-white/80 backdrop-blur-xl border border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-2xl transition-all duration-500">
         <!-- Primary Brand Top Bar -->
-        <div class="hidden md:flex items-center justify-between px-10 py-3.5 bg-primary border-b border-white/10 relative overflow-hidden rounded-t-2xl">
+        <div id="top-bar" class="hidden md:flex items-center justify-between px-4 sm:px-6 lg:px-6 py-3.5 bg-primary border-b border-white/10 relative overflow-hidden rounded-t-2xl transition-all duration-500 ease-in-out">
             <!-- Decorative Blueprint Grid Background -->
             <div class="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTSAyMCAwIEwgMCAwIDAgMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')]"></div>
 
             <div class="flex items-center gap-10 relative z-10">
-                <a href="tel:+1234567890" class="flex items-center gap-3 lg:text-sm text-xs font-black text-white/90 hover:text-amber-400 transition-all uppercase tracking-[0.1em] group">
+                <a href="tel:+1234567890" class="flex items-center gap-3 lg:text-sm text-xs font-black text-white/90 hover:text-amber-400 transition-all tracking-[0.1em] group">
                     <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center border border-white/10 group-hover:border-amber-400/50 group-hover:shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all">
                         <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400 group-hover:rotate-12 transition-transform"></i>
                     </div>
                     <span class="lg:text-sm text-xs">+1 (234) 567-890</span>
                 </a>
-                <a href="mailto:info@nationalgears.com" class="flex items-center gap-3 lg:text-sm text-xs font-black text-white/90 hover:text-amber-400 transition-all uppercase tracking-[0.1em] group">
+                <a href="mailto:info@nationalgears.com" class="flex items-center gap-3 lg:text-sm text-xs font-black text-white/90 hover:text-amber-400 transition-all tracking-[0.1em] group">
                     <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center border border-white/10 group-hover:border-amber-400/50 group-hover:shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all">
                         <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-400 group-hover:-translate-y-0.5 transition-transform"></i>
                     </div>
@@ -134,11 +134,11 @@ function renderHeader() {
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-3 cursor-pointer group">
                 <div class="w-11 h-11 bg-primary text-white rounded-xl flex items-center justify-center shadow-lg shadow-primary/20 group-hover:scale-105 transition-all">
-                    <i data-lucide="settings" class="w-6 h-6 animate-[spin_8s_linear_infinite]"></i>
+                    <i data-lucide="settings" class="md:size-6 size-5 animate-[spin_8s_linear_infinite]"></i>
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-black text-xl tracking-tight text-slate-900 leading-none uppercase">NATIONAL</span>
-                    <span class="font-bold text-[10px] tracking-[0.3em] text-amber-500 leading-none mt-1 uppercase">GEARS</span>
+                    <span class="font-black md:text-xl text-lg tracking-tight text-slate-900 leading-none">National</span>
+                    <span class="font-bold md:text-sm text-xs tracking-[0.3em] text-amber-500 leading-none mt-1">Gears</span>
                 </div>
             </a>
 
@@ -172,8 +172,8 @@ function renderHeader() {
             </nav>
 
             <!-- CTA -->
-            <button onclick="toggleContactModal(true)" class="hidden sm:flex bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest shadow-lg transition-all hover:-translate-y-0.5 active:scale-95 items-center gap-2">
-                <i data-lucide="download" class="w-4 h-4"></i> Download Brochure
+            <button onclick="toggleContactModal(true)" class="hidden sm:flex bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white px-6 py-2.5 h-12 flex items-center justify-center rounded-xl font-bold text-xs tracking-widest shadow-lg transition-all hover:-translate-y-0.5 active:scale-95 gap-2">
+                <i data-lucide="download" class="w-4 h-4"></i>Brochure
             </button>
 
             <!-- Mobile Toggle -->
@@ -200,8 +200,8 @@ function renderHeader() {
                 <i data-lucide="settings" class="w-5 h-5"></i>
             </div>
             <div class="flex flex-col">
-                <span class="font-black text-lg tracking-tight text-slate-900 leading-none">NATIONAL</span>
-                <span class="font-bold text-[9px] tracking-[0.3em] text-amber-500 leading-none mt-1">GEARS</span>
+                <span class="font-black text-lg tracking-tight text-slate-900 leading-none">National</span>
+                <span class="font-bold text-[9px] tracking-[0.3em] text-amber-500 leading-none mt-1">Gears</span>
             </div>
         </div>
 
@@ -210,7 +210,7 @@ function renderHeader() {
         if (link.dropdown) {
             return `
                     <div class="flex flex-col gap-1">
-                        <div class="px-4 py-4 rounded-xl text-slate-900 font-black text-sm uppercase tracking-widest flex items-center gap-2">
+                        <div class="px-4 py-4 rounded-xl text-slate-900 font-black text-sm tracking-widest flex items-center gap-2">
                             ${link.name}
                         </div>
                         <div class="flex flex-col gap-1 pl-4">
@@ -234,7 +234,7 @@ function renderHeader() {
         </nav>
 
         <div class="mt-auto pt-8 border-t border-slate-100">
-            <button onclick="toggleContactModal(true)" class="w-full bg-primary text-white py-4 rounded-xl font-bold text-sm uppercase tracking-widest flex items-center justify-center gap-3 shadow-lg shadow-primary/20">
+            <button onclick="toggleContactModal(true)" class="w-full bg-primary text-white py-4 rounded-xl font-bold text-sm tracking-widest flex items-center justify-center gap-3 shadow-lg shadow-primary/20">
                 <i data-lucide="phone" class="w-4 h-4"></i> Contact Us
             </button>
         </div>
@@ -245,6 +245,38 @@ function renderHeader() {
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
+
+    // Scroll Logic for Top Bar
+    const topBar = document.getElementById('top-bar');
+    const mainHeader = headerRoot.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            if (topBar) {
+                topBar.style.maxHeight = '0px';
+                topBar.style.paddingTop = '0px';
+                topBar.style.paddingBottom = '0px';
+                topBar.style.opacity = '0';
+                topBar.style.borderBottomWidth = '0px';
+            }
+            if (mainHeader) {
+                mainHeader.classList.remove('top-4');
+                mainHeader.classList.add('top-0', 'w-[100%]', 'max-w-full', 'rounded-none');
+            }
+        } else {
+            if (topBar) {
+                topBar.style.maxHeight = '100px';
+                topBar.style.paddingTop = '0.875rem';
+                topBar.style.paddingBottom = '0.875rem';
+                topBar.style.opacity = '1';
+                topBar.style.borderBottomWidth = '1px';
+            }
+            if (mainHeader) {
+                mainHeader.classList.add('top-4');
+                mainHeader.classList.remove('top-0', 'w-[100%]', 'max-w-full', 'rounded-none');
+            }
+        }
+    });
 }
 
 function renderFooter() {
@@ -262,8 +294,8 @@ function renderFooter() {
                             <i data-lucide="settings" class="w-6 h-6 animate-[spin_8s_linear_infinite]"></i>
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-black text-2xl tracking-tight text-white leading-none uppercase">NATIONAL</span>
-                            <span class="font-bold text-[11px] tracking-[0.3em] text-amber-500 leading-none mt-1 uppercase">GEARS</span>
+                            <span class="font-black text-2xl tracking-tight text-white leading-none">National</span>
+                            <span class="font-bold text-[11px] tracking-[0.3em] text-amber-500 leading-none mt-1">Gears</span>
                         </div>
                     </div>
                     <p class="font-light text-slate-400 mb-8 leading-relaxed max-w-sm">
@@ -282,7 +314,7 @@ function renderFooter() {
                     </div>
                 </div>
                 <div class="md:col-span-4 lg:col-span-2">
-                    <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+                    <h4 class="font-bold text-white mb-6 tracking-widest text-sm">Quick Links</h4>
                     <ul class="space-y-4">
                         <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="about-us.html">About Us</a></li>
                         <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="products.html">Products</a></li>
@@ -291,7 +323,7 @@ function renderFooter() {
                     </ul>
                 </div>
                 <div class="md:col-span-4 lg:col-span-2">
-                    <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-sm">Legal & Support</h4>
+                    <h4 class="font-bold text-white mb-6 tracking-widest text-sm">Legal & Support</h4>
                     <ul class="space-y-4">
                         <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="terms-and-conditions.html">Terms & Conditions</a></li>
@@ -299,7 +331,7 @@ function renderFooter() {
                     </ul>
                 </div>
                 <div class="md:col-span-4 lg:col-span-4">
-                    <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+                    <h4 class="font-bold text-white mb-6 tracking-widest text-sm">Newsletter</h4>
                     <p class="font-light text-slate-400 mb-6">Subscribe to receive technical updates, industry news, and product announcements.</p>
                     <div class="relative group">
                         <div class="relative flex items-center bg-white/5 border border-white/10 rounded-xl p-1 focus-within:border-amber-500/50 transition-colors">
@@ -350,26 +382,26 @@ function renderContactPopup() {
             
             <div class="p-10 md:p-14">
                 <div class="mb-10">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 text-amber-500 rounded-lg text-[10px] font-black uppercase tracking-widest mb-4 border border-amber-500/10">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 text-amber-500 rounded-lg text-[10px] font-black tracking-widest mb-4 border border-amber-500/10">
                         Connect With Us
                     </div>
-                    <h2 class="text-4xl font-black text-slate-900 tracking-tighter leading-none uppercase">Get A <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Technical Quote</span></h2>
+                    <h2 class="text-4xl font-black text-slate-900 tracking-tighter leading-none">Get A <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Technical Quote</span></h2>
                 </div>
                 
                 <form class="space-y-6" onsubmit="event.preventDefault(); alert('Inquiry sent successfully!'); toggleContactModal(false);">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
-                            <label class="text-xs font-black text-slate-400 uppercase tracking-widest ml-1">Full Name</label>
+                            <label class="text-xs font-black text-slate-400 ml-1">Full Name</label>
                             <input type="text" required placeholder="John Doe" class="w-full bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4 text-sm font-bold text-slate-900 focus:outline-none focus:border-primary/20 focus:bg-white transition-all">
                         </div>
                         <div class="space-y-2">
-                            <label class="text-xs font-black text-slate-400 uppercase tracking-widest ml-1">Email Address</label>
+                            <label class="text-xs font-black text-slate-400 ml-1">Email Address</label>
                             <input type="email" required placeholder="john@company.com" class="w-full bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4 text-sm font-bold text-slate-900 focus:outline-none focus:border-primary/20 focus:bg-white transition-all">
                         </div>
                     </div>
                     
                     <div class="space-y-2">
-                        <label class="text-xs font-black text-slate-400 uppercase tracking-widest ml-1">Requirement Type</label>
+                        <label class="text-xs font-black text-slate-400 ml-1">Requirement Type</label>
                         <div class="relative">
                             <select class="w-full bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4 text-sm font-bold text-slate-900 focus:outline-none focus:border-primary/20 focus:bg-white transition-all appearance-none cursor-pointer">
                                 <option>Spur Gears</option>
@@ -382,11 +414,11 @@ function renderContactPopup() {
                     </div>
                     
                     <div class="space-y-2">
-                        <label class="text-xs font-black text-slate-400 uppercase tracking-widest ml-1">Your Message</label>
+                        <label class="text-xs font-black text-slate-400 ml-1">Your Message</label>
                         <textarea rows="4" required placeholder="Describe your technical specifications..." class="w-full bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4 text-sm font-bold text-slate-900 focus:outline-none focus:border-primary/20 focus:bg-white transition-all resize-none"></textarea>
                     </div>
                     
-                    <button type="submit" class="w-full bg-primary text-white py-5 rounded-2xl font-black text-sm uppercase tracking-[0.2em] shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+                    <button type="submit" class="w-full bg-primary text-white py-5 rounded-2xl font-black text-sm tracking-[0.2em] shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
                         Send Inquiry
                     </button>
                 </form>
