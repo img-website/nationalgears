@@ -291,12 +291,11 @@ function renderFooter() {
                     </ul>
                 </div>
                 <div class="md:col-span-4 lg:col-span-2">
-                    <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-sm">Support</h4>
+                    <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-sm">Legal & Support</h4>
                     <ul class="space-y-4">
-                        <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="#">Privacy Policy</a></li>
-                        <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="quality.html">Quality Control</a></li>
-                        <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="industries.html">Industries</a></li>
-                        <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="contact.html">Support</a></li>
+                        <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a class="text-slate-400 font-light hover:text-amber-400 transition-all" href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
                 <div class="md:col-span-4 lg:col-span-4">
