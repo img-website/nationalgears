@@ -27,11 +27,11 @@
 <body class="font-['Google_Sans'] bg-slate-50 overflow-x-hidden">
     <div id="header-root"></div>
 
-    <main class="pt-40">
+    <main class="md:pt-40 pt-28">
         <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-16 py-10">
             <div class="text-center md:mb-8 mb-4">
                 <div
-                    class="inline-flex items-center gap-3 px-4 py-2 bg-primary/5 border border-primary/10 rounded-full text-primary text-[10px] font-black tracking-[0.3em] md:mb-8 mb-4">
+                    class="inline-flex items-center gap-3 px-4 py-2 bg-primary/5 border border-primary/10 rounded-full text-primary text-xs font-black tracking-[0.3em] md:mb-8 mb-4">
                     <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span> Help Center
                 </div>
                 <h1
@@ -50,15 +50,16 @@
                 <div class="bg-white rounded-[2rem] border border-slate-100 shadow-sm overflow-hidden group">
                     <button onclick="toggleFaq(this)"
                         class="w-full px-10 py-8 text-left flex items-center justify-between gap-6 group">
-                        <span class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">What
+                        <span
+                            class="lg:text-xl md:text-base text-sm font-bold text-slate-900 group-hover:text-primary transition-colors">What
                             is the typical lead time for custom gear manufacturing?</span>
                         <div
-                            class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all transform group-[.active]:rotate-180">
+                            class="md:size-10 size-8 shrink-0 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all transform group-[.active]:rotate-180">
                             <i data-lucide="chevron-down" class="w-5 h-5"></i>
                         </div>
                     </button>
                     <div class="faq-answer hidden px-10 pb-8">
-                        <p class="text-slate-500 leading-relaxed font-light">
+                        <p class="lg:text-base md:text-sm text-xs text-slate-500 leading-relaxed font-light">
                             Standard lead times range from 4 to 8 weeks depending on complexity, material availability,
                             and order volume. For urgent requirements, we offer expedited production services.
                         </p>
@@ -67,15 +68,16 @@
                 <div class="bg-white rounded-[2rem] border border-slate-100 shadow-sm overflow-hidden group">
                     <button onclick="toggleFaq(this)"
                         class="w-full px-10 py-8 text-left flex items-center justify-between gap-6 group">
-                        <span class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">What
+                        <span
+                            class="lg:text-xl md:text-base text-sm font-bold text-slate-900 group-hover:text-primary transition-colors">What
                             quality certifications do you hold?</span>
                         <div
-                            class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all transform group-[.active]:rotate-180">
+                            class="md:size-10 size-8 shrink-0 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all transform group-[.active]:rotate-180">
                             <i data-lucide="chevron-down" class="w-5 h-5"></i>
                         </div>
                     </button>
                     <div class="faq-answer hidden px-10 pb-8">
-                        <p class="text-slate-500 leading-relaxed font-light">
+                        <p class="lg:text-base md:text-sm text-xs text-slate-500 leading-relaxed font-light">
                             National Gears is ISO 9001:2015 certified. Our inspection facility is equipped with Mitutoyo
                             CMMs, Lead & Profile testers, and various specialized metrology instruments to ensure DIN 3
                             quality standards.
@@ -85,15 +87,17 @@
                 <div class="bg-white rounded-[2rem] border border-slate-100 shadow-sm overflow-hidden group">
                     <button onclick="toggleFaq(this)"
                         class="w-full px-10 py-8 text-left flex items-center justify-between gap-6 group">
-                        <span class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">Do you
+                        <span
+                            class="lg:text-xl md:text-base text-sm font-bold text-slate-900 group-hover:text-primary transition-colors">Do
+                            you
                             provide material test reports (MTR)?</span>
                         <div
-                            class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all transform group-[.active]:rotate-180">
+                            class="md:size-10 size-8 shrink-0 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all transform group-[.active]:rotate-180">
                             <i data-lucide="chevron-down" class="w-5 h-5"></i>
                         </div>
                     </button>
                     <div class="faq-answer hidden px-10 pb-8">
-                        <p class="text-slate-500 leading-relaxed font-light">
+                        <p class="lg:text-base md:text-sm text-xs text-slate-500 leading-relaxed font-light">
                             Yes, all our deliveries are accompanied by comprehensive quality documentation, including
                             Material Test Certificates, Heat Treatment Reports, and Dimensional Inspection Reports.
                         </p>
@@ -102,15 +106,16 @@
                 <div class="bg-white rounded-[2rem] border border-slate-100 shadow-sm overflow-hidden group">
                     <button onclick="toggleFaq(this)"
                         class="w-full px-10 py-8 text-left flex items-center justify-between gap-6 group">
-                        <span class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">Can
+                        <span
+                            class="lg:text-xl md:text-base text-sm font-bold text-slate-900 group-hover:text-primary transition-colors">Can
                             you manufacture gears from customer drawings or samples?</span>
                         <div
-                            class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all transform group-[.active]:rotate-180">
+                            class="md:size-10 size-8 shrink-0 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all transform group-[.active]:rotate-180">
                             <i data-lucide="chevron-down" class="w-5 h-5"></i>
                         </div>
                     </button>
                     <div class="faq-answer hidden px-10 pb-8">
-                        <p class="text-slate-500 leading-relaxed font-light">
+                        <p class="lg:text-base md:text-sm text-xs text-slate-500 leading-relaxed font-light">
                             Absolutely. We specialize in both build-to-print manufacturing from technical drawings and
                             reverse engineering from existing gear samples.
                         </p>

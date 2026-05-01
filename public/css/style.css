@@ -32,9 +32,9 @@ h1, h2, h3, h4, h5, h6 {
                 position: fixed;
                 top: 0;
                 left: 0;
-                width: 36px;
-                height: 36px;
-                border: 2px solid rgba(245, 158, 11, 0.7);
+                width: 2.25rem;
+                height: 2.25rem;
+                border: 0.125rem solid rgba(245, 158, 11, 0.7);
                 border-radius: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 99999;
@@ -46,8 +46,8 @@ h1, h2, h3, h4, h5, h6 {
                 position: fixed;
                 top: 0;
                 left: 0;
-                width: 8px;
-                height: 8px;
+                width: 0.5rem;
+                height: 0.5rem;
                 background-color: #f59e0b;
                 border-radius: 50%;
                 transform: translate(-50%, -50%);
@@ -56,8 +56,8 @@ h1, h2, h3, h4, h5, h6 {
             }
 
             .custom-cursor-outline.hovering {
-                width: 56px;
-                height: 56px;
+                width: 3.5rem;
+                height: 3.5rem;
                 background-color: rgba(245, 158, 11, 0.1);
                 border-color: rgba(245, 158, 11, 1);
             }
@@ -69,11 +69,11 @@ h1, h2, h3, h4, h5, h6 {
             }
 
             33% {
-                transform: translate(30px, -50px) scale(1.1);
+                transform: translate(1.875rem, -3.125rem) scale(1.1);
             }
 
             66% {
-                transform: translate(-20px, 20px) scale(0.9);
+                transform: translate(-1.25rem, 1.25rem) scale(0.9);
             }
 
             100% {
@@ -141,8 +141,8 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         @keyframes pulse-glow {
-            0%, 100% { opacity: 0.5; filter: blur(10px); }
-            50% { opacity: 1; filter: blur(15px); }
+            0%, 100% { opacity: 0.5; filter: blur(0.625rem); }
+            50% { opacity: 1; filter: blur(0.9375rem); }
         }
 
         .animate-pulse-glow {
@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .text-stroke-amber {
-            -webkit-text-stroke: 1px rgba(245, 158, 11, 0.5);
+            -webkit-text-stroke: 0.0625rem rgba(245, 158, 11, 0.5);
             color: transparent;
         }
 
@@ -161,4 +161,50 @@ h1, h2, h3, h4, h5, h6 {
         @keyframes spin {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
+        }
+
+        /* Hide scrollbar but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Mobile Nav Scrollbar */
+        .mobile-nav-scrollbar::-webkit-scrollbar {
+            width: 0.25rem;
+        }
+        .mobile-nav-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .mobile-nav-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(0, 32, 69, 0.1);
+            border-radius: 0.625rem;
+        }
+        .mobile-nav-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 32, 69, 0.2);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-1.25rem); }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.05); }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse-slow 8s ease-in-out infinite;
+        }
+
+        .animation-delay-1000 {
+            animation-delay: 1s;
         }

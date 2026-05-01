@@ -29,7 +29,7 @@
 
     <main class="bg-white pt-24">
         <!-- High-Impact Creative Centered Hero -->
-        <section class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden pt-8">
+        <section class="relative md:h-[100dvh] flex items-center justify-center overflow-hidden md:pt-8 py-12">
             <div class="absolute inset-0 z-0">
                 <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary to-slate-900"></div>
                 <div
@@ -48,7 +48,7 @@
 
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <div
-                    class="inline-flex items-center gap-3 px-5 py-2 bg-white/5 border border-white/10 rounded-full text-amber-500 text-[0.5625rem] font-black tracking-[0.4em] mb-6 backdrop-blur-xl">
+                    class="inline-flex items-center gap-3 px-5 py-2 bg-white/5 border border-white/10 rounded-full text-amber-500 md:text-sm text-xs font-black tracking-[0.4em] md:mb-6 mb-4 backdrop-blur-xl">
                     <span class="w-1.5 h-1.5 rounded-full bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]"></span>
                     Industrial Mastery
                 </div>
@@ -62,20 +62,20 @@
                 </h1>
 
                 <p
-                    class="text-blue-100/50 lg:text-base md:text-base text-sm font-light leading-relaxed mb-16 max-w-2xl mx-auto">
+                    class="text-blue-100/50 lg:text-base md:text-base text-sm font-light leading-relaxed md:mb-16 mb-8 max-w-2xl mx-auto">
                     Synergizing advanced manufacturing with precision engineering for world-class industrial gear
                     solutions.
                 </p>
 
-                <div class="flex flex-wrap justify-center gap-12">
+                <div class="flex flex-wrap justify-center md:gap-12 gap-8">
                     <div class="flex flex-col items-center">
-                        <div class="text-3xl font-black text-white tracking-tighter mb-1">AGMA 12</div>
-                        <div class="text-[0.5rem] font-bold text-amber-500 tracking-[0.2em]">Accuracy Standard
+                        <div class="md:text-3xl text-2xl font-bold text-white tracking-tighter mb-1">AGMA 12</div>
+                        <div class="text-xs font-bold text-amber-500 tracking-[0.2em]">Accuracy Standard
                         </div>
                     </div>
                     <div class="flex flex-col items-center">
-                        <div class="text-3xl font-black text-white tracking-tighter mb-1">58-62 HRC</div>
-                        <div class="text-[0.5rem] font-bold text-amber-500 tracking-[0.2em]">Surface Hardness
+                        <div class="md:text-3xl text-2xl font-bold text-white tracking-tighter mb-1">58-62 HRC</div>
+                        <div class="text-xs font-bold text-amber-500 tracking-[0.2em]">Surface Hardness
                         </div>
                     </div>
                 </div>
@@ -83,8 +83,8 @@
 
             <!-- Scroll Indicator -->
             <div
-                class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40 hover:opacity-100 transition-opacity">
-                <span class="text-[0.625rem] text-white tracking-[0.4em] font-black">Discover</span>
+                class="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-4 opacity-40 hover:opacity-100 transition-opacity">
+                <span class="text-xs text-white tracking-[0.4em] font-black">Discover</span>
                 <div class="w-[0.0625rem] h-12 bg-gradient-to-b from-amber-500 to-transparent"></div>
             </div>
         </section>
@@ -96,14 +96,14 @@
                     <div class="order-2 lg:order-1">
                         <h2
                             class="text-3xl md:text-4xl lg:text-5xl font-black text-primary mb-8 tracking-tighter leading-none">
-                            Manufacturing <br><span class="text-amber-500">Capabilities</span>
+                            Manufacturing <span class="md:block text-amber-500">Capabilities</span>
                         </h2>
                         <div class="space-y-4 lg:space-y-6">
                             <!-- Capability Items -->
                             <div
                                 class="p-6 lg:p-8 bg-white rounded-2xl lg:rounded-3xl border border-slate-100 shadow-sm lg:hover:shadow-xl lg:hover:-translate-y-1 lg:hover:-translate-y-2 transition-all group">
                                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
-                                    <h3 class="text-xl lg:text-2xl font-black text-slate-900">Spur & Helical
+                                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900">Spur & Helical
                                         Gears</h3>
                                     <span class="text-amber-500 font-black text-sm lg:text-base">2000+ mm</span>
                                 </div>
@@ -112,7 +112,7 @@
                                         <div class="h-full bg-primary w-[85%]"></div>
                                     </div>
                                     <span
-                                        class="text-[0.5625rem] lg:text-[0.625rem] font-black text-slate-400 whitespace-nowrap">0.4
+                                        class="text-[0.5625rem] lg:text-xs font-black text-slate-400 whitespace-nowrap">0.4
                                         - 30 Module</span>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                             <div
                                 class="p-6 lg:p-8 bg-white rounded-2xl lg:rounded-3xl border border-slate-100 shadow-sm lg:hover:shadow-xl lg:hover:-translate-y-1 lg:hover:-translate-y-2 transition-all group">
                                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
-                                    <h3 class="text-xl lg:text-2xl font-black text-slate-900">Bevel Gears
+                                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900">Bevel Gears
                                         (Hypoid)</h3>
                                     <span class="text-amber-500 font-black text-sm lg:text-base">500 mm</span>
                                 </div>
@@ -129,7 +129,7 @@
                                         <div class="h-full bg-primary w-[60%]"></div>
                                     </div>
                                     <span
-                                        class="text-[0.5625rem] lg:text-[0.625rem] font-black text-slate-400 whitespace-nowrap">0.5
+                                        class="text-[0.5625rem] lg:text-xs font-black text-slate-400 whitespace-nowrap">0.5
                                         - 12 Module</span>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@
                             <div
                                 class="p-6 lg:p-8 bg-white rounded-2xl lg:rounded-3xl border border-slate-100 shadow-sm lg:hover:shadow-xl lg:hover:-translate-y-1 lg:hover:-translate-y-2 transition-all group">
                                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
-                                    <h3 class="text-xl lg:text-2xl font-black text-slate-900">Worm & Worm
+                                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900">Worm & Worm
                                         Wheels</h3>
                                     <span class="text-amber-500 font-black text-sm lg:text-base">1000 mm</span>
                                 </div>
@@ -146,7 +146,7 @@
                                         <div class="h-full bg-primary w-[75%]"></div>
                                     </div>
                                     <span
-                                        class="text-[0.5625rem] lg:text-[0.625rem] font-black text-slate-400 whitespace-nowrap">Up
+                                        class="text-[0.5625rem] lg:text-xs font-black text-slate-400 whitespace-nowrap">Up
                                         to 15 Module</span>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
                             <div
                                 class="p-6 lg:p-8 bg-white rounded-2xl lg:rounded-3xl border border-slate-100 shadow-sm lg:hover:shadow-xl lg:hover:-translate-y-1 lg:hover:-translate-y-2 transition-all group">
                                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
-                                    <h3 class="text-xl lg:text-2xl font-black text-slate-900">Spline Shafts
+                                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900">Spline Shafts
                                     </h3>
                                     <span class="text-amber-500 font-black text-sm lg:text-base">3000 mm Length</span>
                                 </div>
@@ -163,7 +163,7 @@
                                         <div class="h-full bg-primary w-[90%]"></div>
                                     </div>
                                     <span
-                                        class="text-[0.5625rem] lg:text-[0.625rem] font-black text-slate-400 whitespace-nowrap">Custom
+                                        class="text-[0.5625rem] lg:text-xs font-black text-slate-400 whitespace-nowrap">Custom
                                         Profiles</span>
                                 </div>
                             </div>
@@ -176,11 +176,11 @@
                         <div
                             class="relative bg-white p-2 lg:p-4 rounded-[2.5rem] lg:rounded-[4rem] border border-slate-100 shadow-2xl overflow-hidden aspect-square group">
                             <img src="./public/images/capabilities.png" alt="Capabilities"
-                                class="w-full h-full object-cover rounded-[2rem] lg:rounded-[3.5rem] group-hover:scale-110 transition-transform duration-1000">
+                                class="w-full h-full object-cover rounded-[2rem] lg:rounded-[3.5rem] group-hover:lg:scale-110 transition-transform duration-1000">
                             <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                             <div class="absolute bottom-6 lg:bottom-12 left-6 lg:left-12">
                                 <div
-                                    class="text-[0.5rem] lg:text-[0.625rem] font-black text-amber-500 tracking-widest mb-1 lg:mb-2">
+                                    class="text-[0.5rem] lg:text-xs font-black text-amber-500 tracking-widest mb-1 lg:mb-2">
                                     Technical Capacity</div>
                                 <div class="text-3xl lg:text-5xl font-black text-white tracking-tighter leading-none">
                                     Global <br>Standards</div>
@@ -218,61 +218,61 @@
                     <div
                         class="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group">
                         <div
-                            class="w-16 h-16 bg-amber-500 rounded-2xl flex items-center justify-center mb-8 rotate-3 group-hover:rotate-0 transition-transform">
-                            <i data-lucide="layers" class="w-8 h-8 text-white"></i>
+                            class="md:size-16 size-12 bg-amber-500 rounded-2xl flex items-center justify-center mb-8 rotate-3 group-hover:lg:rotate-0 transition-transform">
+                            <i data-lucide="layers" class="md:size-8 size-6 text-white"></i>
                         </div>
-                        <h3 class="text-3xl font-black text-white mb-6 tracking-tight">CNC Gear Hobbing</h3>
+                        <h3 class="md:text-3xl text-2xl font-bold text-white mb-6 tracking-tight">CNC Gear Hobbing</h3>
                         <p class="text-blue-100/60 lg:text-base md:text-base text-sm font-light leading-relaxed mb-8">
                             High-speed generating of gear teeth with AGMA Class 12 precision and custom tooth profiles.
                         </p>
                         <div class="pt-6 border-t border-white/5">
-                            <span class="text-[0.625rem] font-black text-amber-500 tracking-widest">Precision
+                            <span class="text-xs font-black text-amber-500 tracking-widest">Precision
                                 Standard</span>
-                            <div class="text-2xl font-black text-white">AGMA 12</div>
+                            <div class="md:text-2xl text-xl font-bold text-white">AGMA 12</div>
                         </div>
                     </div>
 
                     <div
                         class="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group">
                         <div
-                            class="w-16 h-16 bg-amber-500 rounded-2xl flex items-center justify-center mb-8 -rotate-3 group-hover:rotate-0 transition-transform">
-                            <i data-lucide="flame" class="w-8 h-8 text-white"></i>
+                            class="md:size-16 size-12 bg-amber-500 rounded-2xl flex items-center justify-center mb-8 -rotate-3 group-hover:lg:rotate-0 transition-transform">
+                            <i data-lucide="flame" class="md:size-8 size-6 text-white"></i>
                         </div>
                         <h3 class="text-3xl font-black text-white mb-6 tracking-tight">Heat Treatment</h3>
                         <p class="text-blue-100/60 lg:text-base md:text-base text-sm font-light leading-relaxed mb-8">
                             Induction hardening and carbonizing to achieve optimal core toughness and surface hardness.
                         </p>
                         <div class="pt-6 border-t border-white/5">
-                            <span class="text-[0.625rem] font-black text-amber-500 tracking-widest">Surface
+                            <span class="text-xs font-black text-amber-500 tracking-widest">Surface
                                 Hardness</span>
-                            <div class="text-2xl font-black text-white">58-62 HRC</div>
+                            <div class="md:text-2xl text-xl font-bold text-white">58-62 HRC</div>
                         </div>
                     </div>
 
                     <div
                         class="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group">
                         <div
-                            class="w-16 h-16 bg-amber-500 rounded-2xl flex items-center justify-center mb-8 rotate-6 group-hover:rotate-0 transition-transform">
-                            <i data-lucide="cpu" class="w-8 h-8 text-white"></i>
+                            class="md:size-16 size-12 bg-amber-500 rounded-2xl flex items-center justify-center mb-8 rotate-6 group-hover:lg:rotate-0 transition-transform">
+                            <i data-lucide="cpu" class="md:size-8 size-6 text-white"></i>
                         </div>
                         <h3 class="text-3xl font-black text-white mb-6 tracking-tight">CAD/CAM Design</h3>
                         <p class="text-blue-100/60 lg:text-base md:text-base text-sm font-light leading-relaxed mb-8">
                             Full digital simulation and precision engineering of custom gear geometries.
                         </p>
                         <div class="pt-6 border-t border-white/5">
-                            <span class="text-[0.625rem] font-black text-amber-500 tracking-widest">Design
+                            <span class="text-xs font-black text-amber-500 tracking-widest">Design
                                 Software</span>
-                            <div class="text-2xl font-black text-white">Advanced CAD</div>
+                            <div class="md:text-2xl text-xl font-bold text-white">Advanced CAD</div>
                         </div>
                     </div>
 
                     <div
                         class="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group">
                         <div
-                            class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 transition-all">
-                            <i data-lucide="drill" class="w-8 h-8 text-white"></i>
+                            class="md:size-16 size-12 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:lg:bg-amber-500 transition-all">
+                            <i data-lucide="drill" class="md:size-8 size-6 text-white"></i>
                         </div>
-                        <h3 class="text-2xl font-black text-white mb-4 tracking-tight">Internal Grinding</h3>
+                        <h3 class="md:text-2xl text-xl font-bold text-white mb-4 tracking-tight">Internal Grinding</h3>
                         <p class="text-blue-100/40 lg:text-base md:text-base text-sm font-light leading-relaxed">
                             Precision finish for flawless alignment and minimal noise in power transmission.
                         </p>
@@ -281,10 +281,10 @@
                     <div
                         class="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group">
                         <div
-                            class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 transition-all">
-                            <i data-lucide="refresh-cw" class="w-8 h-8 text-white"></i>
+                            class="md:size-16 size-12 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:lg:bg-amber-500 transition-all">
+                            <i data-lucide="refresh-cw" class="md:size-8 size-6 text-white"></i>
                         </div>
-                        <h3 class="text-2xl font-black text-white mb-4 tracking-tight">Reverse Engineering
+                        <h3 class="md:text-2xl text-xl font-bold text-white mb-4 tracking-tight">Reverse Engineering
                         </h3>
                         <p class="text-blue-100/40 lg:text-base md:text-base text-sm font-light leading-relaxed">
                             Accurate replication of industrial gears from physical samples using 3D scanning.
@@ -294,16 +294,16 @@
                     <div
                         class="bg-amber-500 p-8 rounded-3xl flex flex-col justify-between group cursor-pointer overflow-hidden relative">
                         <div
-                            class="absolute -right-20 -bottom-20 w-64 h-64 bg-white/10 rounded-full blur-[3.75rem] group-hover:scale-150 transition-transform duration-1000">
+                            class="absolute -right-20 -bottom-20 w-64 h-64 bg-white/10 rounded-full blur-[3.75rem] group-hover:lg:scale-150 transition-transform duration-1000">
                         </div>
                         <div class="relative z-10">
-                            <div class="text-[0.625rem] font-black text-white/60 tracking-widest mb-2">Need a
+                            <div class="text-xs font-black text-white/60 tracking-widest mb-2">Need a
                                 Custom solution?</div>
                             <h3 class="text-4xl font-black text-white leading-none tracking-tighter">Consult
                                 Our <br>Engineers</h3>
                         </div>
                         <a href="#contact"
-                            class="relative z-10 w-12 h-12 bg-white rounded-full flex items-center justify-center self-end group-hover:translate-x-2 transition-transform">
+                            class="relative z-10 w-12 h-12 bg-white rounded-full flex items-center justify-center self-end group-hover:lg:translate-x-2 transition-transform">
                             <i data-lucide="arrow-right" class="w-6 h-6 text-amber-500"></i>
                         </a>
                     </div>
@@ -314,16 +314,17 @@
         <!-- CTA Section -->
         <section class="py-10 lg:py-16 bg-[#fcfaf7] relative overflow-hidden">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <div class="text-[0.625rem] font-black text-amber-500 tracking-[0.4em] mb-8">Get Started</div>
-                <h2 class="lg:text-5xl md:text-4xl text-3xl font-black text-primary mb-8 tracking-tighter leading-none">
-                    Ready to <br>Engineer?</h2>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <div class="text-xs font-black text-amber-500 tracking-[0.4em] md:mb-8 mb-4">Get Started</div>
+                <h2
+                    class="lg:text-5xl md:text-4xl text-3xl font-black text-primary md:mb-8 mb-4 tracking-tighter leading-none">
+                    Ready to Engineer?</h2>
+                <div class="flex flex-wrap justify-center md:gap-6 gap-2">
                     <a href="#quote"
-                        class="px-12 py-6 bg-primary text-white font-black tracking-widest text-xs rounded-full shadow-2xl hover:bg-primary/90 transition-all w-full sm:w-auto">
+                        class="lg:px-12 md:px-8 px-5 md:py-4 py-3 bg-primary text-white font-black tracking-widest md:text-sm text-xs rounded-full shadow-2xl hover:lg:bg-primary/90 transition-all w-fit">
                         Request a quote
                     </a>
                     <a href="#brochure"
-                        class="px-12 py-6 bg-white border border-slate-200 text-primary font-black tracking-widest text-xs rounded-full hover:bg-slate-50 transition-all w-full sm:w-auto">
+                        class="lg:px-12 md:px-8 px-5 md:py-4 py-3 bg-white border border-slate-200 text-primary font-black tracking-widest md:text-sm text-xs rounded-full hover:lg:bg-slate-50 transition-all w-fit">
                         Download Brochure
                     </a>
                 </div>
